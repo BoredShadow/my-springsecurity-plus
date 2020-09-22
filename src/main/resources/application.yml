@@ -10,7 +10,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/my-springsecurity-plus?serverTimezone=Asia/Shanghai
     username: root
-    password: 180430121
+    password: root
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       # 初始化配置
@@ -55,6 +55,9 @@ mybatis:
 logging:
   file:
     path: src\main\resources\logger\ # logger文件夹需要提前生成
+  level:
+    com.codermy.myspringsecurityplus.admin.dao: debug
+    com.codermy.myspringsecurityplus.log.dao: debug
 
 jwt:
   tokenHeader: Authorization #JWT存储的请求头
