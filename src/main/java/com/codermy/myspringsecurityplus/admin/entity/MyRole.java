@@ -14,6 +14,7 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 public class MyRole extends BaseEntity{
+
     private static final long serialVersionUID = -6525908145032868837L;
 
     private Integer roleId;
